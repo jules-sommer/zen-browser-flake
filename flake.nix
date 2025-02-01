@@ -8,15 +8,15 @@
   outputs = { self, nixpkgs }:
     let
       system = "x86_64-linux";
-      version = "1.7.3b";
+      version = "1.7.4b";
       downloadUrl = {
         "specific" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-specific.tar.bz2";
-	  sha256 = "sha256:1gc30l3rwrsihbjabwqqkig8hs8ykdlmcqazba0jd812pyvlil2d";
+	  sha256 = "sha256:1d2mfm3g54n71rc9xg4pad3d60ws8kxhcfkvx6df5fc0ikd9n8c6";
 	};
 	"generic" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-generic.tar.bz2";
-	  sha256 = "sha256:1gc30l3rwrsihbjabwqqkig8hs8ykdlmcqazba0jd812pyvlil2d";
+	  sha256 = "sha256:1d2mfm3g54n71rc9xg4pad3d60ws8kxhcfkvx6df5fc0ikd9n8c6";
 	};
       };
 
