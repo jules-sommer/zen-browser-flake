@@ -127,5 +127,8 @@
       latest = mkZen latest;
       default = self.packages."${system}".latest;
     };
+    overlays.default = _: prev: {
+      zen-browser = self.packages.${prev.system}.default;
+    };
   };
 }
